@@ -4,7 +4,7 @@ export default {
   theme: {
     colors: {
       "fondo": "#060B27",
-      "primary": "#5E17EB",
+      "primary": "#7235EC",
       "navBarColor": "#e3f2fd",
       "btm-color": "#5E17EB",
       "border-color": "#bdc4c7",
