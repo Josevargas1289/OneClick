@@ -1,10 +1,10 @@
 import { Button, Modal } from "antd";
 import { useState } from "react";
-import icondesarrolloweb from "../../assets/website1.png";
+
 import { useNavigate } from "react-router-dom";
+import { SettingOutlined, } from "@ant-design/icons";
 
-const ModalDesarrolloWeb = () => {
-
+const ModalMantenimiento = () => {
   const [modal2Open, setModal2Open] = useState(false);
 
   const navigate = useNavigate();
@@ -16,14 +16,14 @@ const ModalDesarrolloWeb = () => {
   return (
     <>
       <Button
-        className=" flex justify-center items-center rounded-md bg-color-icon-branding w-10 p-2 h-10 hover:scale-125"
+        className=" flex justify-center items-center rounded-md  w-10 p-2 h-10 hover:scale-125"
         type="secundary"
         onClick={() => setModal2Open(true)}
       >
-        <img src={icondesarrolloweb} alt="" />
+      <SettingOutlined className=" text-3xl text-btm-color" />
       </Button>
       <Modal
-        title="¿Que es desarrollo web?"
+        title="¿Mantenimiento?"
         centered
         open={modal2Open}
         onOk={() => setModal2Open(false)}
@@ -32,9 +32,7 @@ const ModalDesarrolloWeb = () => {
       >
         <p>
           {" "}
-          En Simétrica Dev Studio, nuestro servicio de desarrollo web es mucho
-          más que un sitio en línea. Es una emocionante oportunidad para
-          revitalizar tu presencia digital, manteniendo lo que te hace único..
+          ¡Confía en nosotros para el mantenimiento! En <span className=" text-btm-color font-bold">One Click</span>, estamos comprometidos a mantener todo funcionando sin problemas. Descubre cómo podemos cuidar de tus sistemas y equipos. ¡Averigua más ahora!
         </p>
         <div className=" mt-2 flex justify-end">
           <button
@@ -48,4 +46,4 @@ const ModalDesarrolloWeb = () => {
     </>
   );
 };
-export default ModalDesarrolloWeb;
+export default ModalMantenimiento;

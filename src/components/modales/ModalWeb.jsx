@@ -1,27 +1,28 @@
 import { Button, Modal } from "antd";
 import { useState } from "react";
-import iconBranding from "../../assets/icobranding1.png";
 import { useNavigate } from "react-router-dom";
+import { ChromeOutlined, } from "@ant-design/icons";
 
-const ModalBranding = () => {
+
+const ModalWeb = () => {
   const [modal2Open, setModal2Open] = useState(false);
   const navigate = useNavigate();
 
-  const gobranding = () => {
-    navigate("/branding");
+  const goweb = () => {
+    navigate("/desarrollo");
   };
 
   return (
     <>
       <Button
-        className=" flex justify-center items-center rounded-md bg-color-icon-branding w-10 p-2 h-10 hover:scale-125"
+        className=" flex justify-center items-center rounded-md  w-10 p-2 h-10 hover:scale-125"
         type="secundary"
         onClick={() => setModal2Open(true)}
       >
-        <img src={iconBranding} alt="" />
+        <ChromeOutlined className=" text-3xl text-btm-color" />
       </Button>
       <Modal
-        title="¿Que es Branding?"
+        title="¿Desarrollo web?"
         centered
         open={modal2Open}
         onOk={() => setModal2Open(false)}
@@ -31,14 +32,13 @@ const ModalBranding = () => {
       >
         <p>
           {" "}
-          En Simétrica Dev Studio, el servicio de branding y rebranding es mucho
-          más que un simple cambio de imagen. Es una oportunidad emocionante
-          para revitalizar y transformar tu marca en algo nuevo y emocionante,
-          manteniendo la esencia que la hace única.
+          En <span className=" text-btm-color font-bold">One Click</span>, nuestro servicio de desarrollo web es mucho
+          más que un sitio en línea. Es una emocionante oportunidad para
+          revitalizar tu presencia digital, manteniendo lo que te hace único..
         </p>
         <div className=" mt-2 flex justify-end">
           <button
-            onClick={gobranding}
+            onClick={goweb}
             className="  bg-btm-color flex content-center items-center justify-center p-2 w-32 text-white rounded-md hover:bg-primary-blue font-poppins text-sm  "
           >
             Ver mas
@@ -49,4 +49,4 @@ const ModalBranding = () => {
     </>
   );
 };
-export default ModalBranding;
+export default ModalWeb;

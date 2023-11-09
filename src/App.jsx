@@ -3,8 +3,8 @@ import Nabvar from "./components/navbar/Nabvar";
 import Home from "./pages/Home";
 import Nosotros from "./pages/Nosotros";
 import Desarrollo from "./pages/DesarrolloWeb";
-import DesarrolloMovil from "./pages/DesarrolloMovil";
-import Branding from "./pages/Branding";
+import Soporte from "./pages/Soporte";
+import Mantenimiento from "./pages/Mantenimiento";
 import Contacto from "./components/contacto/Contacto";
 
 
@@ -17,8 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/desarrollo" element={<Desarrollo />} />
-        <Route path="/desarrolloMovil" element={<DesarrolloMovil />} />
-        <Route path="/branding" element={<Branding />} />
+        <Route path="/soporte" element={<Soporte/>} />
+        <Route path="/mantenimiento" element={<Mantenimiento />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       
