@@ -8,6 +8,7 @@ import ModalMantenimiento from "../modales/ModalMantenimiento";
 
 
 
+
 const Section1 = () => {
   // codigo js
   const navigate = useNavigate();
@@ -18,9 +19,9 @@ const Section1 = () => {
 
   return (
     // html
-    <div className=" pt-44 p-10 lg:p-20 flex flex-col items-center border-b-1 border-inherit  ">
+    <div className="mt-28 pt-44 p-5 lg:p-20 flex flex-col items-center border-b border-border-color lg:mt-20 xl:mt-20  ">
       <section className=" w-full flex flex-col lg:flex-row xl:flex-row  items-center lg:p-0 xl:p-10 gap-10 ">
-        <div className=" flex flex-col gap-4 w-full lg:w-2/3">
+        <div className=" flex flex-col gap-4 w-full lg:w-screen ">
           <h1 className=" text-lg lg:text-2xl xl:text-2xl font-bold">
             Expertos en desarrollo{" "}
             <span className=" text-btm-color">
@@ -43,10 +44,10 @@ const Section1 = () => {
           </button>
         </div>
         <div>
-          <img className=" w-72" src={imgsection1} alt="" />
+          <img className="  w-72 lg:w-screen" src={imgsection1} alt="" />
         </div>
       </section>
-      <div className=" p-10 flex flex-col lg:flex-row xl:flex-row  lg:gap-20 xl:gap-20 ">
+      <div className=" p-10 flex  flex-col  lg:flex-row xl:flex-row  lg:gap-20 xl:gap-20 ">
         <div className=" flex mt-14 gap-3">
           <div>
            <ModalWeb/>
