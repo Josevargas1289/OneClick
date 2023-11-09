@@ -5,10 +5,6 @@ import ModalWeb from "../modales/ModalWeb";
 import ModalSoporte from "../modales/ModalSoporte";
 import ModalMantenimiento from "../modales/ModalMantenimiento";
 
-
-
-
-
 const Section1 = () => {
   // codigo js
   const navigate = useNavigate();
@@ -47,10 +43,10 @@ const Section1 = () => {
           <img className="  w-72 lg:w-screen" src={imgsection1} alt="" />
         </div>
       </section>
-      <div className=" p-10 flex  flex-col  lg:flex-row xl:flex-row  lg:gap-20 xl:gap-20 ">
-        <div className=" flex mt-14 gap-3">
+      <div className=" mt-10 lg:mt-2 w-full  lg:p-10 flex  flex-col lg:justify-center lg:flex-row xl:flex-row  lg:gap-20 xl:gap-20 ">
+        <div className=" flex mt-4 lg:mt-14 gap-3">
           <div>
-           <ModalWeb/>
+            <ModalWeb />
           </div>
           <div>
             <h3 className=" font-bold">Desarrollo web</h3>
@@ -58,9 +54,9 @@ const Section1 = () => {
           </div>
         </div>
 
-        <div className=" flex mt-14 gap-3">
+        <div className=" flex mt-4 lg:mt-14 gap-3">
           <div>
-            <ModalSoporte/>
+            <ModalSoporte />
           </div>
           <div>
             <h3 className=" font-bold">Soporte</h3>
@@ -68,19 +64,16 @@ const Section1 = () => {
           </div>
         </div>
 
-        <div className=" flex mt-14 gap-3">
+        <div className=" flex mt-4 lg:mt-14 gap-3">
           <div>
-            <ModalMantenimiento/>
+            <ModalMantenimiento />
           </div>
           <div>
             <h3 className=" font-bold">Mantenimiento</h3>
             <p>Conserva tu tecnología</p>
           </div>
         </div>
-      
       </div>
-    
-     
     </div>
   );
 };
