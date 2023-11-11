@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const DesarrolloSoftware = ({ setMessage }) => {
   const changeMessage = () => {
-    setMessage("Deseo cotizar los servicios de desarrollo de software");
+    setMessage("Estoy interesado en desarrollar un sitio web para mi empresa. ¿Podríamos discutir más detalles y posiblemente obtener una cotización?");
   };
 
   return (

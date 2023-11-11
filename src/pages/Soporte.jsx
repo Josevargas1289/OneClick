@@ -6,7 +6,7 @@ const Soporte = ({ setMessage }) => {
 
 
   const changeMessage = () => {
-    setMessage("Deseo cotizar los servicios de soporte para mi empresa");
+    setMessage("Necesito soporte técnico para resolver algunos problemas en mi sistema. ¿Pueden ayudarme a solucionarlos y proporcionar detalles sobre sus servicios de soporte");
   };
     return (
       <div className="flex flex-col items-center justify-center mt-36 font-roboto">

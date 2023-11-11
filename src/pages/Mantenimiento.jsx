@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Mantenimiento = ({ setMessage }) => {
   const changeMessage = () => {
-    setMessage("Deseo cotizar los servicios de mantenimiento para mi empresa ");
+    setMessage("Estoy interesado en servicios integrales de mantenimiento para garantizar el rendimiento óptimo de mis sistemas, tanto a nivel de hardware como de software. ¿Pueden proporcionar información detallada sobre sus servicios de mantenimiento, incluyendo la cobertura para hardware y software, así como las tarifas asociadas? ");
   };
 
   return (
