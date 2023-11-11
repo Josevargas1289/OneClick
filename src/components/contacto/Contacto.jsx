@@ -1,108 +1,152 @@
-import { Form, Input } from "antd";
+import { Form, Input, Button } from "antd";
 import TextArea from "antd/es/input/TextArea";
+import { useState, useEffect } from "react";
+import emailjs from "emailjs-com";
+import Swal from 'sweetalert2'
 
 
-const Contacto = () => {
+
+
+const Contacto = ({ message, setMessage }) => {
+  const [form] = Form.useForm();
+  const [editableMessage, setEditableMessage] = useState(message);
+
+  useEffect(() => {
+    setEditableMessage(message);
+  }, [message]);
+
+  const onFinish = (values) => {
+    const emailJsParams = {
+      serviceId: "service_wpjwlqa",
+      templateId: "template_gd0iqed",
+      userId: "ZqvoJr1X9GSNs0Xuv",
+    };
+
+    const emailData = {
+      ...values,
+      mensaje: editableMessage || values.mensaje,
+      to_name: "One Click",
+      from_name: `${values.Nombre} ${values.Apellido}`,
+      user_email: values.email,
+    };
+
+    emailjs
+      .send(
+        emailJsParams.serviceId,
+        emailJsParams.templateId,
+        emailData,
+        emailJsParams.userId
+      )
+      .then(() => {
+        Swal.fire({
+          title: "Mensaje enviado",
+          icon: 'success',
+          confirmButtonText: 'Aceptar'
+        })
+        // console.log("Correo enviado con éxito:", response);
+        form.resetFields(); // Limpiamos todos los campos del formulario
+        setEditableMessage("");
+      })
+      .catch(() => {
+        Swal.fire({
+          title: "Error",
+          text: "su mensaje no se envio",
+          icon: 'error',
+          confirmButtonText: 'Aceptar'
+        })
+        // console.error("Error al enviar el correo:", error);
+      });
+  };
+
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
+
+  const clean = () =>{
+    setMessage(null)
+  }
+
   
-    const onFinish = (values) => {
-        console.log("Success:", values);
-      };
-      const onFinishFailed = (errorInfo) => {
-        console.log("Failed:", errorInfo);
-      };
+  return (
+    <div className="bg-bg-contact mt-96 p-10 flex flex-col items-center">
+      <div className="mb-10">
+        <h3 className="font-poppins font-semibold text-lg lg:text-3xl text-center">
+          Hola
+        </h3>
+        <span className="font-poppins text-sm">
+          Contáctanos a través de nuestros canales, redes sociales, WhatsApp, <br /> o
+          envíanos tus requerimientos a través de este formulario
+        </span>
+      </div>
 
-
-    return (
-        <div className="bg-bg-contact mt-52 p-10 ">
-    <div className=" flex flex-col gap-3 justify-center items-center mb-10">
-      <h3 className=" font-poppins font-semibold text-lg lg:text-3xl text-center ">
-        Hola
-      </h3>
-      <span className=" font-poppins text-border-color text-sm">
-        Contactanos a traves de nuestros canales, redes sociales, whatsApp, o
-        envianos tus requerimientos a traves de este formulario
-      </span>
-    </div>
-
-    <div className="  flex   justify-center items-center lg:pr-40  w-full overflow-x-hidden  ">
-      <Form
-        style={{ width: "700px" }}
-        name="basic"
-        labelCol={{
-          span: 8,
-        }}
-        wrapperCol={{
-          span: 16,
-        }}
-        initialValues={{
-          remember: true,
-        }}
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
-        autoComplete="off"
-      >
-        <Form.Item
-          label="Nombre"
-          name="Nombre"
-          rules={[
-            {
-              required: true,
-              message: "por favor digite su nombre !",
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          label="Apellido"
-          name="Apellido"
-          rules={[
-            {
-              required: true,
-              message: "Por favor digite su apellido!",
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          label="Email"
-          name="email"
-          rules={[
-            {
-              required: true,
-              message: "Por favor digite su email!",
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-
-        <Form.Item label="Mensaje">
-          <TextArea rows={4} />
-        </Form.Item>
-
-        <Form.Item
-          wrapperCol={{
-            offset: 8,
-            span: 16,
+      <div className="w-full max-w-md">
+        <Form
+          form={form}
+          name="basic"
+          initialValues={{
+            mensaje: editableMessage,
           }}
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
+          autoComplete="off"
         >
-          <div className=" flex pl-16  lg:justify-end">
-            <button className="  bg-btm-color flex  items-center justify-center p-2 w-32 text-white rounded-md hover:bg-primary-blue font-poppins text-sm">
-              Enviar
-            </button>
-          </div>
-        </Form.Item>
-      </Form>
+          <Form.Item
+            label="Nombre"
+            name="Nombre"
+            rules={[
+              { required: true, message: "¡Por favor, ingresa tu nombre!" },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+          <Form.Item
+            label="Apellido"
+            name="Apellido"
+            rules={[
+              { required: true, message: "¡Por favor, ingresa tu apellido!" },
+            ]}
+          >
+            <Input
+             />
+          </Form.Item>
+
+          <Form.Item
+            label="Email"
+            name="email"
+            rules={[
+              {
+                required: true,
+                message: "¡Por favor, ingresa tu correo electrónico!",
+              },
+            ]}
+          >
+            <Input 
+            type="email"/>
+          </Form.Item>
+          <Form.Item label="Mensaje" name="mensaje">
+            <TextArea
+              rows={4}
+              value={editableMessage}
+              onChange={(e) => setEditableMessage(e.target.value)}
+            />
+          </Form.Item>
+
+          <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <div className=" ml-20 lg:flex justify-end">
+              <Button
+              onClick={clean}
+                type="primary"
+                htmlType="submit"
+                className="bg-btm-color flex items-center justify-center p-2 w-32 text-white rounded-md hover:bg-primary-blue font-poppins text-sm"
+              >
+                Enviar
+              </Button>
+            </div>
+          </Form.Item>
+        </Form>
+      </div>
     </div>
-  </div>
-        
-    );
+  );
 };
 
 export default Contacto;
-
-
-
-

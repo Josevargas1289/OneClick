@@ -4,13 +4,12 @@ import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import imglogosvg from "../../assets/oneclick.svg";
 import { Link, useNavigate } from "react-router-dom";
 import "../navbar/styled.css";
 
 const Nabvar = () => {
   const [expanded, setExpanded] = useState(false);
-  console.log(expanded);
+  // console.log(expanded);
 
   const closeMenu = () => {
     setExpanded(expanded ? false : "expanded");
