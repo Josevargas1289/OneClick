@@ -3,6 +3,7 @@ import TextArea from "antd/es/input/TextArea";
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import Swal from 'sweetalert2'
+import logo from "../../assets/logoNavbar.png"
 
 
 
@@ -68,7 +69,9 @@ const Contacto = ({ message, setMessage }) => {
 
   
   return (
-    <div className="bg-bg-contact mt-96 p-10 flex flex-col items-center">
+  
+    <div className="bg-bg-contact mt-20 p-10 flex flex-col items-center">
+      <img src={logo} alt="" />
       <div className="mb-10">
         <h3 className="font-poppins font-semibold text-lg lg:text-3xl text-center">
           Hola

@@ -7,6 +7,7 @@ import Soporte from "./pages/Soporte";
 import Mantenimiento from "./pages/Mantenimiento";
 import Contacto from "./components/contacto/Contacto";
 import { useState } from "react";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/mantenimiento" element={<Mantenimiento setMessage ={setMessage} />} />
         <Route path="/contacto" element={<Contacto message ={message} setMessage = {setMessage}  />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
