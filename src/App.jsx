@@ -17,7 +17,7 @@ function App() {
   console.log(message);
 
   return (
-    <div className=" overflow-y-hidden">
+    <div className=" overflow-y-hidden overflow-x-hidden">
       <Nabvar />
       <Routes>
         <Route path="/" element={<Home />} />

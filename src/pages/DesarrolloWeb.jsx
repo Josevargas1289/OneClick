@@ -11,11 +11,11 @@ const DesarrolloSoftware = ({ setMessage }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-36 font-roboto m-2   ">
+    <div className="w-full flex flex-col items-center justify-center  font-roboto m-2   ">
       <Desarrollo />
-      <div className=" w-full  lg:flex  m-5 p-2 gap-3 items-center shadow-lg h-52 lg:h-20 lg:w-4/5 ">
+      <div className=" lg:mr-16 lg:flex  mb-5 p-2 gap-3 items-center shadow-lg h-52 lg:h-20  ">
         <div className="flex items-center gap-2 pt-4 lg:pt-0">
-          <AlertOutlined className=" text-4xl" />
+          <AlertOutlined className=" text-4xl text-red-color" />
           <p>
             {" "}
             Si deseas contratar este servicio no dudes en dar clic, envia tus
@@ -25,7 +25,7 @@ const DesarrolloSoftware = ({ setMessage }) => {
         <div className=" flex justify-end">
           <Link to={"/contacto"}>
             <Button
-              className=" mt-14 lg:mt-0 it  bg-btm-color hover:bg-primary flex content-center items-center justify-center p-2 w-40 text-white rounded-md hover:bg-primary-blue font-poppins text-md"
+              className=" mt-14 lg:mt-5 it  bg-btm-color hover:bg-primary flex content-center items-center justify-center p-2 w-40 text-white rounded-md hover:bg-primary-blue font-poppins text-md"
               onClick={changeMessage}
             >
               Contratar servicio
