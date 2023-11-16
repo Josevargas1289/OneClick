@@ -1,10 +1,14 @@
+import ReactPlayer from "react-player";
+
 const Desarrollo = () => {
+  const vidUrl = "https://www.youtube.com/watch?v=yY2O5AddKos";
+
   return (
     <div className=" p-3 lg:p-20 flex flex-col items-center lg:w-4/5  ">
       <div className=" mb-16">
-        <h1 className=" text-2xl text-btm-color text-center">
+        <strong className=" text-2xl text-btm-color text-center">
           Nuestro servicio de desarrollo web
-        </h1>
+        </strong>
       </div>
       <div>
         <p>
@@ -23,8 +27,19 @@ const Desarrollo = () => {
           de desarrollo web.
         </p>
       </div>
-      <div>
-        <strong>Descubre mas de nuestro servicio de desarrollo web</strong>
+      <div className=" flex items-start  mt-5 lg:w-full">
+        <strong className=" text-1xl lg:text-2xl text-btm-color mb-5">
+          Descubre más acerca de React💣
+        </strong>
+      </div>
+      <div className=" flex justify-start w-3/5   lg:w-full">
+        <ReactPlayer
+          url={vidUrl}
+          playing={false}
+          volume={0.5}
+          controls={true}
+         
+        />
       </div>
     </div>
   );
