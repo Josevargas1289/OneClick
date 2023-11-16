@@ -16,6 +16,7 @@ export default {
       "happy-bg": "#08D3BB",
       "happy-bg1": "#1090CB",
       "happy-bg2": "#9208D3",
+      "red-color": "#DC2626"
 
 
     },
