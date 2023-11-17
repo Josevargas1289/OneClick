@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className=" flex flex-col ">
                     <h3 className=" hover:text-btm-color font-bold">Acerca</h3>
                     <a className=" hover:text-btm-color font-light  mt-3 text-sm" href="/contacto">Contacto</a>
-                    <a className=" hover:text-btm-color font-light   text-sm" href="/">Team</a>
+                    <a className=" hover:text-btm-color font-light   text-sm" href="/team">Team</a>
                     <a className="hover:text-btm-color font-light   text-sm" href="/nosotros">Nosotros</a>
 
                 </div>

@@ -8,6 +8,7 @@ import Mantenimiento from "./pages/Mantenimiento";
 import Contacto from "./components/contacto/Contacto";
 import { useState } from "react";
 import Footer from "./components/footer/Footer";
+import Team from "./pages/Team";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/desarrollo" element={<Desarrollo setMessage ={setMessage}  />} />
         <Route path="/soporte" element={<Soporte setMessage ={setMessage} />} />
         <Route path="/mantenimiento" element={<Mantenimiento setMessage ={setMessage} />} />

@@ -6,12 +6,12 @@ const Desarrollo = () => {
   return (
     <div className="mt-28 w-full p-10 m-10 lg:p-20 flex flex-col items-center   ">
       <div className=" mb-16">
-        <strong className=" text-2xl text-btm-color text-center">
+        <strong className=" text-4xl text-btm-color text-center">
           Nuestro servicio de desarrollo web
         </strong>
       </div>
       <div>
-        <p >
+        <p>
           Nuestro servicio de desarrollo web se distingue por la utilización de
           tecnologías de vanguardia, entre ellas React. Nos especializamos en la
           creación de componentes que no solo potencian la funcionalidad, sino
@@ -38,7 +38,6 @@ const Desarrollo = () => {
           playing={false}
           volume={0.5}
           controls={true}
-         
         />
       </div>
     </div>
