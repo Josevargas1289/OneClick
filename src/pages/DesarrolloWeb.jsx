@@ -5,6 +5,9 @@ import { AlertOutlined } from "@ant-design/icons";
 import { FloatButton } from "antd";
 
 const DesarrolloSoftware = ({ setMessage }) => {
+ 
+  const navigate = useNavigate();
+  
   const changeMessage = () => {
     setMessage(
       "Estoy interesado en desarrollar un sitio web para mi empresa. ¿Podríamos discutir más detalles y posiblemente obtener una cotización?"
@@ -12,7 +15,7 @@ const DesarrolloSoftware = ({ setMessage }) => {
     gocontact();
   };
 
-  const navigate = useNavigate();
+  
 
   const gocontact = () => {
     navigate("/contacto");
