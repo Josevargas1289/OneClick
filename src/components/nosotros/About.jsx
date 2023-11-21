@@ -83,12 +83,7 @@ const About = () => {
               tecnológica. Nos proyectamos como el referente destacado en
               servicios de mantenimiento, soporte y desarrollo web, marcando una
               diferencia significativa en la evolución positiva de empresas y
-              comunidades. <br /> <br /> Nuestra visión es ser reconocidos como
-              innovadores incansables, ofreciendo soluciones tecnológicas
-              personalizadas que no solo cumplen, sino que superan las
-              expectativas. Nos esforzamos por ser el socio estratégico
-              preferido, aportando constantemente al crecimiento y éxito
-              sostenible de nuestros clientes.
+              comunidades.
             </p>
           </div>
         </div>

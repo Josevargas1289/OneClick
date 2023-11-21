@@ -344,6 +344,14 @@ const Nabvar = () => {
             >
               Team
             </Nav.Link>
+            <Nav.Link
+              onClick={toggleChange}
+              as={Link}
+              to={"/clientes"}
+              className="text-black font-poppins text-md "
+            >
+              Clientes
+            </Nav.Link>
             <NavDropdown
               title="Servicios"
               id="collasible-nav-dropdown"

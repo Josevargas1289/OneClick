@@ -20,6 +20,8 @@ const images = [
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/mantenimiento%2F5.png?alt=media&token=293616e4-896f-43ea-8099-f713364f2810",
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/mantenimiento%2F6.png?alt=media&token=ab5ff516-3828-413e-92c8-00cc82ede570",
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/mantenimiento%2F7.png?alt=media&token=9884850b-7e89-4116-a875-1c7aca2c1f04",
+    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/mantenimiento%2FMantenimiento%20(2).png?alt=media&token=80f11474-f8ad-4546-8e49-7b9f1f394d42",
+    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/mantenimiento%2FMantenimiento%20(1).png?alt=media&token=79d8f9ba-dfe8-414e-9a5e-e2c315a374c2"
 ];
 
 const CarruselMantenimiento = () => {

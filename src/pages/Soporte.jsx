@@ -2,6 +2,7 @@ import "animate.css";
 import { useNavigate } from "react-router-dom";
 import { AlertOutlined } from "@ant-design/icons";
 import { FloatButton } from "antd";
+import SoporteService from "../components/servicios/Soporte";
 
 
 const Soporte = ({ setMessage }) => {
@@ -20,7 +21,7 @@ const Soporte = ({ setMessage }) => {
   };
     return (
       <div className="w-full flex flex-col items-center justify-center  font-roboto m-2   ">
-      {/* Aqui va el componente mantenimiento */}
+      <SoporteService/>
       <FloatButton
         onClick={changeMessage}
         tooltip={<div className=" text-2xl">Contratar este servicio</div>}

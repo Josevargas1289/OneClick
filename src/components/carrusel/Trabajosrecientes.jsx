@@ -13,13 +13,11 @@ import { autoPlay } from "react-swipeable-views-utils";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
-    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F3.png?alt=media&token=74ba1fd0-383b-4eb6-8751-180a0c5152c8",
-    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F5.png?alt=media&token=145ccd45-af05-4c36-a568-481d9334cf44",
-    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F6.png?alt=media&token=2c6046f1-c869-4cb6-ab91-e5fc300ba241",
-    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F7.png?alt=media&token=a3864d28-c8f1-410c-896e-9ae60b7a92c7",
+    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/trabajosrecientes%2F9B8A3F60-A7DC-49B2-A702-80609DBA98F1.JPG?alt=media&token=9ac2316b-311a-44b3-96c4-999a2afc2441",
+    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/trabajosrecientes%2FIMG_2632.jpg?alt=media&token=79c48488-e207-4eb2-a602-78db3dfdaeba"
 ];
 
-const CarruselComunity = () => {
+const TrabajosCarrusel = () => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -109,4 +107,4 @@ const CarruselComunity = () => {
   );
 };
 
-export default CarruselComunity;
+export default TrabajosCarrusel;

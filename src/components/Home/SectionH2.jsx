@@ -10,7 +10,7 @@ const Section2Home = () => {
       <div className=" mb-10  mt-5 text-center ">
         <h3 className=" font-poppins font-bold text-md lg:text-3xl mb-4">
           Soluciones{" "}
-          <span className=" text-btm-color ">tecnologícas Integrales</span>{" "}
+          <span className=" text-btm-color ">tecnologícas integrales</span>{" "}
         </h3>
         <p className="  font-poppins font-light text-sm mb-20">
           Desarrollo web, soporte y mantenimiento de computadores para impulsar
@@ -37,16 +37,13 @@ const Section2Home = () => {
           <div className=" flex flex-col mt-3 m-2">
             <h3 className=" font-poppins font-semibold text-md lg:text-3xl">
               <span className=" text-btm-color">Diseño responsivo</span>
-              {""} Adaptado a tus necesidades.
+              {""} adaptado a tus necesidades.
             </h3>
             <p className=" text-justify mt-3 text-md  ">
-              Descubre un diseño web responsivo, intuitivo y SEO-optimizado. Nos
+              Descubre un diseño web responsivo e intuitivo. Nos
               comprometemos a brindarte flujos de usuario excepcionales, gracias
               a nuestra enfoque en definición funcional, arquitectura sólida,
-              desarrollo de calidad y código reutilizable. Nuestro trabajo
-              abarca 4 fases cruciales: Desarrollo, Pruebas Q&A, Pre-Producción
-              y Producción, para garantizar una presencia en línea de alto
-              rendimiento y escalabilidad.
+              desarrollo de calidad y código reutilizable.
             </p>
           </div>
         </div>
@@ -77,14 +74,11 @@ const Section2Home = () => {
               {""} y disponible cuando más lo necesitas.
             </h3>
             <p className=" text-justify mt-3 text-md ">
-              Experimenta un soporte técnico excepcional, intuitivo y adaptado a
+              Experimenta un soporte técnico excepcional, y adaptado a
               tus necesidades informáticas. Nuestro compromiso radica en
               proporcionarte soluciones efectivas, gracias a nuestro enfoque en
               diagnóstico preciso, resolución eficiente, calidad en la
-              asistencia y prácticas de mantenimiento sólidas. Nuestra labor
-              abarca cuatro etapas esenciales: Evaluación, Resolución,
-              Seguimiento y Optimización, para asegurar un soporte tecnológico
-              de alto rendimiento y escalabilidad.
+              asistencia y prácticas de mantenimiento sólidas.
             </p>
           </div>
         </div>
@@ -106,14 +100,14 @@ const Section2Home = () => {
                 Mantenimiento
               </h3>
               <span className=" text-md text-border-color">
-              Mantenimiento que Preserva <br /> Actualización que Transforma..
+              Mantenimiento que preserva <br /> actualización que transforma..
               </span>
             </div>
           </div>
           <div className=" flex flex-col mt-3 m-2">
             <h3 className=" font-poppins font-semibold text-md lg:text-3xl">
-              <span className=" text-btm-color">Preservando la Eficiencia</span>
-              {""} Mantenimiento Preventivo para Tus Computadoras.
+              <span className=" text-btm-color">Preservando la eficiencia</span>
+              {""} mantenimiento preventivo para tus computadoras.
             </h3>
             <p className=" text-justify mt-3 text-md  ">
             Descubre el universo del mantenimiento informático con nosotros. Nos comprometemos a proporcionarte estrategias de conservación excepcionales, impulsadas por un soporte técnico eficiente y soluciones adaptadas a tus necesidades

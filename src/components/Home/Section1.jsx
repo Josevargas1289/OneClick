@@ -21,15 +21,14 @@ const Section1 = () => {
           <h1 className=" text-lg lg:text-2xl xl:text-2xl font-bold">
             Expertos en desarrollo{" "}
             <span className=" text-btm-color">
-              Web, mantenimiento e infraestructura tecnologíca
+              web, mantenimiento e infraestructura tecnologíca
             </span>
           </h1>
 
           <p className=" lg: text-lg">
             Bienvenido a One Click, Tu socio estratégico en desarrollo web y
-            mantenimiento de computadores, ofreciendo soluciones creativas y
-            personalizadas para destacar en el mundo digital, incluyendo
-            servicios especializados en infraestructura tecnologíca.
+            mantenimiento de computadores, ofrecemos soluciones creativas y
+            personalizadas para destacar en el mundo digital.
           </p>
 
           <button

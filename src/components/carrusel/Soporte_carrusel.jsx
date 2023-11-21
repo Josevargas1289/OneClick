@@ -18,7 +18,7 @@ const images = [
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F12.png?alt=media&token=21f9b70d-3fbf-43ad-a2d7-a7c77f17019b",
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F13.png?alt=media&token=55e40396-f148-476d-95aa-48c8c1a5f491",
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F14.png?alt=media&token=148ebcf5-b695-49c0-b4da-20fdfc56653e",
-    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F2.png?alt=media&token=f829f78d-45c8-45c6-9cef-1596707dac15",
+    "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F2.png?alt=media&token=0099f7ed-831b-4bbd-b98f-a73be57ca60c",
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F4.png?alt=media&token=7550c243-c02e-4f40-87c4-2cb42d63c81b",
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F8.png?alt=media&token=8c11b629-4af4-40cb-a831-22892cb0ab20",
     "https://firebasestorage.googleapis.com/v0/b/oneclick-fe3ae.appspot.com/o/soporte%2F9.png?alt=media&token=cc01e5b9-41af-49dc-ab54-f77d6527ce14",
