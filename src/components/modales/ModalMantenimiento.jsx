@@ -10,7 +10,7 @@ const ModalMantenimiento = () => {
   const navigate = useNavigate();
 
   const goweb = () => {
-    navigate("/desarrollo");
+    navigate("/mantenimiento");
   };
 
   return (
